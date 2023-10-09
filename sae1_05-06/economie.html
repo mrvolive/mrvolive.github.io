@@ -62,30 +62,61 @@
     </section>	  
 	  
     <!--======= ABOUT SECTION =========-->
-    <section class="sectoion-100px about">
+    <section class="padding-t-100 padding-b-50">
       <div class="container"> 
         <!-- Tittle -->
         <div class="tittle">
           <h4>A propos</h4>
           <p>Avec 100 collaborateurs, Reflet est aujourd’hui un acteur majeur pour le e-commerce sous Magento2 / React JS et dans la communication digitale de grands groupes internationaux notamment dans le domaine du luxe.</p>
         </div>
-        <ul class="row">
-          <li class="col-sm-4"> <img class="img-responsive" src="images/about-img-1.jpg" alt="" >
-            <h6 class="margin-top-20">Qui sommes-nous ?</h6>
-            <p> Fondé en 2001, Reflet communication est basé à Nancy, Belfort, Strasbourg, Lyon, Lille, Paris et Dubaï. </p>
-          </li>
-          <li class="col-sm-4"> <img class="img-responsive" src="images/about-img-2.jpg" alt="" >
-            <h6 class="margin-top-20">Notre mission</h6>
-            <p>Nous sommes conscients que l'innovation et la créativité n'ont de sens que si elles servent un propos authentique. Notre connaissance des marques et de leur environnement nous permet de développer le ton exact et un discours juste et adapté.</p>
-          </li>
-          <li class="col-sm-4"> <img class="img-responsive" src="images/about-img-3.jpg" alt="" >
-            <h6 class="margin-top-20">Notre vision</h6>
-            <p>La modularité, la modernité et la justesse sont les valeurs qui caractérisent l’agence dans le but d’offrir aux clients le Reflet de leurs ambitions, en les accompagnant de manière holistique dans toute la chaîne de valeur.</p>
-		  </li>
-        </ul>
+			  	  
       </div>
     </section>
-    
+	  
+	<section class="padding-b-50">
+      <div class="flexcontainer"> 
+		  
+		<div class = "flexitem-70">
+			  <!-- Chart CA -->		  
+			<div>
+		  		<canvas id="myChart"></canvas>
+			</div>
+
+			<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+			<script>
+			  const ctx = document.getElementById('myChart');
+
+			  new Chart(ctx, {
+				type: 'line',
+				data: {
+				  labels: ['2016', '2017', '2018', '2019', '2020', '2021'],
+				  datasets: [{
+					label: "Chiffre d'Affaire en €",
+					data: [6436030, 8717630, 10050893, 11828884, 12756916, 16053312],
+					borderWidth: 1
+				  }]
+				},
+				options: {
+				  scales: {
+					y: {
+					  beginAtZero: false
+					}
+				  }
+				}
+			  });
+			</script>
+<!-- Fin Chart CA -->	
+		</div>
+		  
+          <div class="flexitem-30">
+            <h6>Evolution du chiffre d'affaire</h6>
+            <p>Ces chiffres montrent une croissance continue de l'entreprise au fil des ans, avec une augmentation significative du chiffre d'affaires en 2021 par rapport à l'année précédente.</p>
+			<p>La croissance continue de l'entreprise et l'augmentation significative du chiffre d'affaires en 2021 sont des signes positifs pour l'avenir de l'entreprise. Cela peut indiquer que l'entreprise est sur la bonne voie pour atteindre ses objectifs à long terme et peut avoir plus de ressources pour investir dans la croissance et l'expansion.</p>
+		  </div>
+		  
+		</div>
+	</section> 
 
     <!--======= Tastimonial =========-->
     <section class="tastimonial tastimonial-bg padding-bottom-100">

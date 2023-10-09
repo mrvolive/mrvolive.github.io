@@ -279,6 +279,50 @@ header nav li a{
 	color:#fff;
 	font-size:20px;
 }
+.flexitem {
+	flex: 1 1 0px;
+	padding: 20px;
+	width: auto;
+}
+.flexitem-0 {
+	flex: 1 1 0px;
+	padding: 20px;
+	width: auto;
+}
+
+.flexitem-20 {
+	flex: 1 1 0px;
+	padding: 20px;
+	width: auto;
+}
+.flexitem-30 {
+	flex: 1 1 0px;
+	padding: 20px;
+	width: auto;
+}
+
+.flexitem-40 {
+	flex: 1 1 0px;
+	padding: 20px;
+	width: auto;
+}
+
+.flexitem-60 {
+	flex: 1 1 0px;
+	padding: 20px;
+	width: auto;
+}
+
+.flexitem-70 {
+	flex: 1 1 0px;
+	padding: 20px;
+	width: auto;
+}
+
+.flexitem-80 {
+	flex: 1 1 0px;
+	padding: 20px;
+	width: auto;
 }
 @media (max-width:640px) {
 .portfolio .col-2 .item {
