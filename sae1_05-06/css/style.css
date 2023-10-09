@@ -22,6 +22,16 @@ body
  + SOCIAL ICONS
  + 3 MENU LEVEL
 -------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+color palette 
+ 31393C Gunmetal
+ 2176FF Blue
+ 33A1FD Celestial Blue
+ FDCA40 Sunglow
+ F79824 Carrot orange
+-------------------------------------------------------------------*/
+
 /*=======================================================
       IMPORT FONT FILE
 ========================================================*/
@@ -71,7 +81,7 @@ body {
 ========================================================*/
 h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
-	color: #315659;
+	color: #F79824;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	font-family: 'open_sansregular', sans-serif;
@@ -95,7 +105,7 @@ h6 {
 	font-size: 16px;
 }
 p {
-	color: #636363;
+	color: #31393C;
 	font-size: 13px;
 	line-height: 28px;
 	font-family: 'open_sanslight';
@@ -332,12 +342,13 @@ header nav li a {
 header nav li.active a:hover {
 }
 header nav li.active a {
+	color: #2176FF
 }
 header nav li.inactive a {
 	color: gray;
 }
 header nav li a:hover {
-	color: #2978A0;
+	color: #33A1FD;
 }
 header nav .ownmenu li {
 	float: left;
@@ -1615,7 +1626,7 @@ header.main-header nav .ownmenu li {
 	padding-top: 60px;
 	padding-bottom: 10px;
 	min-height: 200px;
-	background: #3c3c3c;
+	background: #2176FF;
 	text-transform: uppercase;
 }
 .footer-up .contact {
@@ -1623,7 +1634,7 @@ header.main-header nav .ownmenu li {
 	padding-top: 60px;
 	padding-bottom: 10px;
 	min-height: 200px;
-	background: #343434;
+	background: #33A1FD;
 }
 .footer-up i {
 	font-size: 40px;
