@@ -2343,6 +2343,11 @@ footer .social_icons li a {
 	background-color: #3b5a9b;
 	border-color: #3b5a9b;
 }
+.social_icons .general a:hover {
+	color: #fff;
+	background-color: #F79824;
+	border-color: #F79824;
+}
 .social_icons .flickr a:hover {
 	color: #fff;
 	background-color: #ff0084;
