@@ -2533,8 +2533,27 @@ footer .social_icons li a {
 	flex-wrap: wrap;
 	flex-shrink: 10;
 }
+.flexcontainer2 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap-reverse;
+	flex-shrink: 10;
+}
 
 .flexitem {
+	flex: 1 1 0px;
+	padding: 20px;
+	width: 0;
+}
+
+.flexitem-img {
+	flex: 1 1 0%;
+	padding: 20px;
+	width: 0;
+}
+
+.flexitem-txt {
 	flex: 1 1 0px;
 	padding: 20px;
 	width: 0;

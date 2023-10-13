@@ -73,10 +73,12 @@
       </div>
     </section>
 	  
-	<section class="padding-b-50">
+
+<!-- 1ère ligne -->
+	<section class="padding-b-100">
   <div class="flexcontainer"> 
 		  
-		<div class = "flexitem-70">
+		<div class = "flexitem-img">
 			  <!-- Chart CA -->		  
 			<div>
 		  		<canvas id="myChart"></canvas>
@@ -110,7 +112,7 @@
 <!-- Fin Chart CA -->	
 		</div>
 		  
-      <div class="flexitem-30">
+      <div class="flexitem-txt">
         <h6>Evolution du chiffre d'affaire</h6>
         <p>Ces chiffres montrent une croissance continue de l'entreprise au fil des ans, avec une augmentation significative du chiffre d'affaires en 2021 par rapport à l'année précédente.</p>
 			  <p>La croissance continue de l'entreprise et l'augmentation significative du chiffre d'affaires en 2021 sont des signes positifs pour l'avenir de l'entreprise. Cela peut indiquer que l'entreprise est sur la bonne voie pour atteindre ses objectifs à long terme et peut avoir plus de ressources pour investir dans la croissance et l'expansion.</p>
@@ -118,10 +120,20 @@
 		  
 		</div>
 	</section>
-  <section class="padding-b-50">
-    <div class="flexcontainer"> 
-        
-      <div class = "flexitem-70">
+
+<!-- 2ème ligne -->	
+
+  <section class="padding-b-100">
+    <div class="flexcontainer2"> 
+
+      <!-- Item Gauche -->	
+      <div class="flexitem-txt">
+        <h6>Croissance</h6>
+        <p>Le taux de croissance du chiffre d'affaires a connu une augmentation significative en 2021 à 25,8%. Cela indique une augmentation importante des ventes sur cette même année. </p>
+        <p>L’augmentation des taux de marge d'EBITDA  et opérationnelle quant à elle, indique une amélioration constante du profit généré par l’entreprise indépendamment de sa politique de financement, d’investissement et de ses contraintes.</p>
+     </div>
+     <!-- Item Droite -->	
+      <div class = "flexitem-img">
           <!-- Chart CA -->		  
         <div>
             <canvas id="myChart2"></canvas>
@@ -138,7 +150,47 @@
             labels: ['2018', '2019', '2020', '2021'],
             datasets: [{
             label: "Chiffre d'Affaire en €",
-            data: [10050893, 11828884, 12756916, 16053312],
+            data: [],
+            borderColor: '#F79824',
+            borderWidth: 1
+            }]
+          },
+          options: {
+            scales: {
+            y: {
+              beginAtZero: false
+            }
+            }
+          }
+          });
+        </script>
+  <!-- Fin Chart CA -->	
+      </div>      
+      </div>
+    </section>
+
+    <!-- 3ème ligne -->
+	<section class="padding-b-100">
+    <div class="flexcontainer"> 
+        
+      <div class = "flexitem-img">
+          <!-- Chart CA -->		  
+        <div>
+            <canvas id="myChart3"></canvas>
+        </div>
+  
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
+        <script>
+          const ctx3 = document.getElementById('myChart3');
+  
+          new Chart(ctx3, {
+          type: 'line',
+          data: {
+            labels: ['2016', '2017', '2018', '2019', '2020', '2021'],
+            datasets: [{
+            label: "Chiffre d'Affaire en €",
+            data: [],
             borderColor: '#F79824',
             borderWidth: 1
             }]
@@ -155,10 +207,10 @@
   <!-- Fin Chart CA -->	
       </div>
         
-        <div class="flexitem-30">
-          <h6>Evolution du chiffre d'affaire</h6>
-          <p>Ces chiffres montrent une croissance continue de l'entreprise au fil des ans, avec une augmentation significative du chiffre d'affaires en 2021 par rapport à l'année précédente.</p>
-          <p>La croissance continue de l'entreprise et l'augmentation significative du chiffre d'affaires en 2021 sont des signes positifs pour l'avenir de l'entreprise. Cela peut indiquer que l'entreprise est sur la bonne voie pour atteindre ses objectifs à long terme et peut avoir plus de ressources pour investir dans la croissance et l'expansion.</p>
+        <div class="flexitem-txt">
+          <h6>GESTION DU BFR</h6>
+          <p>Le BFR est négatif au cours des quatre années, ce qui est généralement un signe positif car cela signifie que l'entreprise est capable de financer ses opérations courantes avec ses passifs courants.</p>
+          <p>En revanche, le BFR d'exploitation est passé de négatif à positif en 2021, ce qui pourrait indiquer un besoin accru de liquidités pour financer les opérations de l’entreprise.</p>
        </div>
         
       </div>
@@ -183,7 +235,7 @@
     <div class="footer-up">
       <div class="col-sm-6">
         <div class="work"> <a class="map" href="https://maps.app.goo.gl/EPtcAv4u4He9fTH46"><i class="fa fa-map-o"></i></a>
-          <p><br>49 Faubourg de France <br>
+          <p>49 Faubourg de France <br>
             90000 Belfort</p>
         </div>
       </div>
