@@ -56,7 +56,7 @@
     <section class="sub-banner">
       <div class="container">
         <div class="position-center-center">
-          <h2>Notre Réussite Economique</h2>
+          <h2>Aperçu Economique</h2>
         </div>
       </div>
     </section>	  
@@ -66,8 +66,10 @@
       <div class="container"> 
         <!-- Tittle -->
         <div class="tittle">
-          <h4>A propos</h4>
-          <p>Avec 100 collaborateurs, Reflet est aujourd’hui un acteur majeur pour le e-commerce sous Magento2 / React JS et dans la communication digitale de grands groupes internationaux notamment dans le domaine du luxe.</p>
+          <h4>Une success story</h4>
+          <p>Reflet Communication a su s'imposer comme un acteur majeur ces dernières années. Aujourd'hui, nombreux sont les professionnels qui ont fait confiance à l'entreprise belfortaine.</p>
+          <p>Voici le résumé des chiffres clés de cette croissance.</p>
+
         </div>
 			  	  
       </div>
@@ -145,15 +147,24 @@
           const ctx2 = document.getElementById('myChart2');
   
           new Chart(ctx2, {
-          type: 'line',
+          
           data: {
-            labels: ['2018', '2019', '2020', '2021'],
             datasets: [{
-            label: "Chiffre d'Affaire en €",
-            data: [],
+            type: 'line',
+            label: "Taux de croissance du CA en %",
+            data: [15.3,17.7,7.8,25.8],
             borderColor: '#F79824',
             borderWidth: 1
-            }]
+            },
+            {
+            type: 'line',
+            label: "Taux de marge d'EBITDA %",
+            data: [15.4,13.9,17.8,21.5],
+            borderColor: '#FDCA40',
+            borderWidth: 1
+            },
+          ],
+          labels: ['2018', '2019', '2020', '2021']
           },
           options: {
             scales: {
@@ -187,13 +198,22 @@
           new Chart(ctx3, {
           type: 'line',
           data: {
-            labels: ['2016', '2017', '2018', '2019', '2020', '2021'],
             datasets: [{
-            label: "Chiffre d'Affaire en €",
-            data: [],
+            type: 'line',
+            label: "Capacité d'autofinancement en M€",
+            data: [1.16,1.25,1.66,2.6],
             borderColor: '#F79824',
             borderWidth: 1
-            }]
+            },
+            {
+            type: 'line',
+            label: "Trésorerie en M€",
+            data: [3.23,4.92,4.79,5.27],
+            borderColor: '#FDCA40',
+            borderWidth: 1
+            },
+          ],
+          labels: ['2018', '2019', '2020', '2021']
           },
           options: {
             scales: {
@@ -208,13 +228,89 @@
       </div>
         
         <div class="flexitem-txt">
-          <h6>GESTION DU BFR</h6>
-          <p>Le BFR est négatif au cours des quatre années, ce qui est généralement un signe positif car cela signifie que l'entreprise est capable de financer ses opérations courantes avec ses passifs courants.</p>
-          <p>En revanche, le BFR d'exploitation est passé de négatif à positif en 2021, ce qui pourrait indiquer un besoin accru de liquidités pour financer les opérations de l’entreprise.</p>
+          <h6>Autonomie Financière</h6>
+          <p>La capacité d'autofinancement a augmenté chaque année, ce qui indique que l'entreprise génère suffisamment de liquidités pour financer ses investissements internes. De plus, la trésorerie a également augmenté chaque année, signe d’une bonne maîtrise globale des dépenses de l’entreprise.</p>
        </div>
         
       </div>
     </section>
+
+    <!-- 4ème ligne -->	
+
+  <section class="padding-b-100">
+    <div class="flexcontainer2"> 
+
+      <!-- Item Gauche -->	
+      <div class="flexitem-txt">
+        <h6>Rentabilité</h6>
+        <p>La marge nette et la rentabilité sur fonds propres ont augmenté, ce qui indique que l'entreprise est devenue plus efficace dans l'utilisation de ses capitaux propres. La rentabilité économique a également augmenté, signifiant une meilleure utilisation des capitaux investis de la part de l’entreprise.</p>
+      </div>
+     <!-- Item Droite -->	
+      <div class = "flexitem-img">
+          <!-- Chart CA -->		  
+        <div>
+            <canvas id="myChart4"></canvas>
+        </div>
+  
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
+        <script>
+          const ctx4 = document.getElementById('myChart4');
+  
+          new Chart(ctx4, {
+          
+          data: {
+            datasets: [
+            {
+            type: 'bar',
+            label: "Rentabilité sur fonds propres %",
+            data: [30.2,69.8,48,52],
+            borderColor: "#33A1FD",
+            borderWidth: 1
+            },{
+            type: 'line',
+            label: "Marge nette sur fond propre en %",
+            data: [10.2,9.9,12.1,15.3],
+            borderColor: '#F79824',
+            borderWidth: 1
+            },{
+            type: 'line',
+            label: "Rentabilité économique en %",
+            data: [10.2,19.9,7.8,25.8],
+            borderColor: '#FDCA40',
+            borderWidth: 1
+            },
+          ],
+          labels: ['2018', '2019', '2020', '2021']
+          },
+          options: {
+            scales: {
+            y: {
+              beginAtZero: false,
+              max:  70
+            }
+            }
+          }
+          });
+        </script>
+  <!-- Fin Chart CA -->	
+      </div>      
+      </div>
+    </section>
+
+    <section class="padding-t-100 padding-b-50">
+      <div class="container"> 
+        <!-- Tittle -->
+        <div class="tittle">
+          <h4>Synthèse</h4>
+          <p>Reflet Communication a connu une croissance constante au cours des quatre dernières années. Elle a su gérer efficacement son besoin en fonds de roulement et générer suffisamment de liquidités pour financer ses activités. On notera aussi une bonne gestion globale de ses investissements.</p>
+          <p>Pour autant, il serait important de surveiller l’évolution du BFR d'exploitation pour s'assurer que l'entreprise peut continuer à financer ses opérations courantes sans difficultés.</p>
+        </div>
+			  	  
+      </div>
+    </section>
+
+    
 
   
 
