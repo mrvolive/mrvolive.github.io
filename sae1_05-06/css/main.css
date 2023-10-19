@@ -4394,3 +4394,26 @@ header nav .ownmenuclick .indicator {
 .padding-bottom-100 {
 	padding-bottom: 100px !important;
 }
+
+
+.m-apercu-container{
+	display: flex;
+    flex-direction: row;
+}
+
+.m-apercu {
+    border-top: 1px solid darkgray;
+	border-bottom: 1px solid darkgray;
+    padding: 1%;
+    width: 33%;
+    margin: 1%;
+    font-size: 1rem;
+    background-color: white;
+    transition: all 0.5s ease;
+}
+
+.m-apercu:hover {
+    transform: scale(1.20);
+    border-color: black;
+    color: black;
+}
